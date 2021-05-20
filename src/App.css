@@ -1,8 +1,11 @@
 .App {
   width: 100%;
-  max-width: 400px;
+  max-width: 480px;
   margin: auto;
+  background-color: lavender;
+  box-shadow: inset -1px -1px #fff, inset -2px 1px grey, inset 1px -2px grey, inset 2px 2px #fff;
   /* text-align: center; */
+  
 }
 
 .App-logo {
@@ -42,41 +45,27 @@
 
 
 /* Nerdy secret: You can use "less" below! Don't tell anybody... */
-
-.github-profile {
-	margin: 1rem; 
+fieldset {
+  background-color: lavender;
 }
-img {
-    width: 75px;
-  }
-.info {
-    display: inline-block;
-    margin-left: 12px;
-		
-  }
-.name {
-    	font-size: 1.25rem;
-      font-weight: bold;
-    }
-form {
-	border: thin solid #ddd;
-  background-color: #fbfbfb;
-  padding: 2rem;
-  margin-bottom: 2rem;
+.profile {
   display: flex;
+  justify-content: space-between;
+  align-content: center;
+  
+}
+.picture-thumb {
+  width: 72px;
+  
+}
+.info {
+  padding: 16px;
+}
+.picture-thumb img {
+  width: 100%;
+}
+
+
+.field-row {
   justify-content: center;
-}
-
-.header {
-	text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-label {
-  margin-right: 2rem;
-}
-
-input {
-  padding: 6px;
 }

@@ -2,13 +2,24 @@
 
 function Card(props) {
     return (
-        <div className="github-profile">
-            <img alt="chomba" src={props.avatar_url} />
+        <fieldset>
+            <legend>
+                {props.name}
+            </legend>
+        <div className="profile">
+            <div className="picture-thumb">
+                <img alt={props.name} src={props.avatar_url} />
+            </div>
             <div className="info">
-            <div className="name">{props.name}.</div>
-            <div className="company">{props.company}</div>
+            <div className="name">{props.name} says -</div>
+            <p>
+                <i>
+                {props.bio}
+                </i>
+            </p>
             </div>
     	</div>
+        </fieldset>
     )
 }
 

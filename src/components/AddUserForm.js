@@ -8,7 +8,8 @@ function AddUserForm(props) {
 
         // const resp = await axios.get(`https://api.github.com/users/${name}`);
         axios.get(`https://api.github.com/users/${name}`).then(res => {
-            props.onSubmit(res.data)
+            props.onSubmit(res.data);
+            setName('');
         })
         
     }
@@ -18,16 +19,22 @@ function AddUserForm(props) {
         setName(e.target.value)
     }
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Name</label>
-                <input 
+        <div className="window-body">
+            
+            <pre>
+                <a href="https://chomba.live">Chomba.live</a> Part of react road map 2021   
+            </pre>
+            
+            <form className="field-row" onSubmit={handleSubmit}>
+             <input 
                 type="text" 
                 value={name}
                 onChange={nameControl} 
+                required
+                placeholder="Github username"
                 id="name" />
 
-                <button>Add Name</button>
+                <button>Get Profile</button>
             </form>
         </div>
     )
