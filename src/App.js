@@ -4,7 +4,6 @@ import './App.css';
 import Header from './components/Header';
 import AddUserForm from './components/AddUserForm';
 import CardList from './components/CardList';
-import Terminal from './components/Terminal';
 
 // For XP
 import "98.css/dist/98.css";
@@ -28,7 +27,6 @@ function App() {
       <Header />
       <AddUserForm onSubmit={addNewProfile} />
       <CardList profiles={profiles} />
-      {/* <Terminal /> */}
     </div>
   );
 }
