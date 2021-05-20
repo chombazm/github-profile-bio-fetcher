@@ -1,3 +1,8 @@
+
+#you can virew th live project here 
+Open https://github-profile-bio-fetcher.netlify.app](https://github-profile-bio-fetcher.netlify.app/) to view it in the browser.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
